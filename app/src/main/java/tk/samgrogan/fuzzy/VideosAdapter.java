@@ -52,11 +52,16 @@ public class VideosAdapter extends RecyclerView.Adapter<VideosAdapter.ViewHolder
 
     @Override
     public void onBindViewHolder(VideosAdapter.ViewHolder holder, int position) {
+        Videos video = mVideos.get(position);
 
+        TextView textView = holder.fileName;
+        textView.setText(video.getFileName());
+        ImageView imageView = holder.mediaImage;
+        imageView.setImageResource(R.drawable.filmicon);
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return mVideos.size();
     }
 }

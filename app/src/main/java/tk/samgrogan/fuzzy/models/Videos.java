@@ -1,6 +1,6 @@
 package tk.samgrogan.fuzzy.models;
 
-import java.net.URI;
+import android.net.Uri;
 
 /**
  * Created by ghost on 10/30/2017.
@@ -8,7 +8,7 @@ import java.net.URI;
 
 public class Videos {
     String fileName;
-    URI fileUri;
+    Uri fileUri;
 
     public String getFileName() {
         return fileName;
@@ -18,11 +18,11 @@ public class Videos {
         this.fileName = fileName;
     }
 
-    public URI getFileUri() {
+    public Uri getFileUri() {
         return fileUri;
     }
 
-    public void setFileUri(URI fileUri) {
+    public void setFileUri(Uri fileUri) {
         this.fileUri = fileUri;
     }
 }
